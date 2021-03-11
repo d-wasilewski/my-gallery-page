@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    width: 65vw;
+    font-family: 'Montserrat', sans-serif;
+    color: #4E5150;
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.user-info {
+    width: 17%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.username {
+    font-size: 24px;
+}
+
+.location {
+    color: #A9A9A9;
+    font-size: 14px;
+
+}
+
+img {
+    object-fit: cover;
+    max-height: 100%;
+    width: 100%;
+    border-radius: 16px;
+}
+
+.account-info {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    margin: 0 auto;
+}
+
+.account-info-card {
+    background-color: #E5E5E5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    border-radius: 12px;
+    width: 80px;
+}
+
+.account-info-card-numer {
+    margin: 0;
+    font-size: 18px;
+}
+
+.account-info-card-type {
+    margin: 0;
+    font-size: 14px;
+    color: #BDBDBD;
+}
+
+.images-container {
+    display: grid;
+
+    gap: 24px;
+
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "photo1 photo2 photo2"
+    "photo3 photo3 photo4"
+    "photo5 photo6 photo4";
+}
+
+.photo1 {
+    grid-area: photo1;
+}
+
+.photo2 {
+    grid-area: photo2;
+}
+
+.photo3 {
+    grid-area: photo3;
+}
+
+.photo4 {
+    grid-area: photo4;
+}
+
+.photo5{
+    grid-area: photo5;
+}
+
+.photo6 {
+    grid-area: photo6;
+}
+
