@@ -1,10 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
 body {
-    margin: 0 auto;
+    margin: 0 auto 50px auto;
     padding: 0;
     box-sizing: border-box;
-    width: 65vw;
+    width: 55vw;
     font-family: 'Montserrat', sans-serif;
     color: #4E5150;
 }
@@ -14,10 +20,11 @@ body {
     flex-direction: column;
     align-items: center;
     margin-bottom: 2rem;
+    margin-top: 2rem;
 }
 
 .user-info {
-    width: 17%;
+    width: 16%;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -27,26 +34,33 @@ body {
 
 .username {
     font-size: 24px;
+    width: 300%;
+    text-align: center;
+    margin: 0;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .location {
     color: #A9A9A9;
     font-size: 14px;
-
+    width: 200%;
+    text-align: center;
 }
 
 img {
     object-fit: cover;
-    max-height: 100%;
+    height: 100%;
     width: 100%;
     border-radius: 16px;
 }
 
 .account-info {
     display: flex;
-    justify-content: space-around;
-    width: 40%;
+    justify-content: center;
+    width: 100%;
     margin: 0 auto;
+    margin-top: 1rem;
 }
 
 .account-info-card {
@@ -55,9 +69,10 @@ img {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 1em;
+    padding: 0.8em 1.1em;
+    margin: 1rem;
     border-radius: 12px;
-    width: 80px;
+    width: 7%;
 }
 
 .account-info-card-numer {
@@ -74,9 +89,9 @@ img {
 .images-container {
     display: grid;
 
-    gap: 24px;
+    gap: 20px;
 
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 30%);
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: 
     "photo1 photo2 photo2"
@@ -98,9 +113,10 @@ img {
 
 .photo4 {
     grid-area: photo4;
+    border-radius: 50%;
 }
 
-.photo5{
+.photo5 {
     grid-area: photo5;
 }
 
@@ -108,3 +124,83 @@ img {
     grid-area: photo6;
 }
 
+.photo {
+    border-radius: 12px;
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 1em;
+    /* height: 100px; */
+    overflow: hidden;
+}
+
+footer a {
+    text-decoration: none;
+    color: #666;
+}
+
+
+@media (max-width: 1150px) {
+    body {
+        width: 70vw;
+    }
+
+    .account-info-card {
+        padding: 0.8em 1.4em;
+    }
+
+    .user-info {
+        width: 19%;
+    }
+
+}
+
+@media (max-width: 800px) {
+    body {
+        width: 90vw;
+    }
+
+    .profile-container {
+        margin: 1rem 0;
+    }
+
+    .account-info-card {
+        padding: 0.6em 1.8em;
+        margin: 0.5rem
+    }
+
+    .user-info {
+        width: 82px;
+    }
+
+    .username {
+        font-size: 14px;
+    }
+
+    .location {
+        font-size: 10px;
+    }
+
+    .account-info-card-numer {
+        font-size: 12px;
+    }
+
+    .account-info-card-type {
+        font-size: 12px;
+    }
+
+    .account-info {
+        margin-top: 0.5rem;
+    }
+
+    footer, footer a {
+        font-size: 12px;
+    }
+}
